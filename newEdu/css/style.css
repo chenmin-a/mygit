@@ -1,7 +1,7 @@
 .wrapper{
 	width: 100%;
+	background: #fff;
 }
-
 .top-wrapper{
 	width: 100%;
 	height: 780px;
@@ -198,4 +198,49 @@
 }
 .feedback ol li.cur{
 	background: #314553;
+}
+
+.start{
+	width: 1400px;
+	height: 860px;
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+.start .start-hd{
+	margin-top: 100px;
+	text-align: center;
+}
+.start .start-hd h4{
+	display: inline;
+	border-bottom: 3px solid #b8e2ec;
+	color: #b8e2ec;
+	font-size: 68px;
+}
+.start .start-bd{
+	text-align: center;
+}
+.tag{
+	width: 760px;
+	height: 38px;
+	border-radius: 23px;
+	border: 4px solid #596974;
+	margin: 0 auto 40px;
+}
+.start .start-bd .tag:first-child{
+	border:0;
+}
+.small-tag{
+	width: 365px;
+	margin-right: 35px;
+
+}
+.small-tag2{
+	width: 356px;
+	margin-right: 0;
+}
+.start .start-bd input{
+	width: 100%;
+	height: 100%;
+	border-radius: 23px;
+	border:0;
 }
