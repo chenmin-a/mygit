@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NEW EDU</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="top-wrapper">
+			<div class="top">
+				<div class="top-hd">
+					<div class="logo">
+						<a href="javascript:;"><h3>new edu</h3></a>
+					</div>
+					<div class="nav">
+						<ul class="clearfix nav-list">
+							<li><a href="javascript:;">关于</a></li>
+							<li><a href="javascript:;">文化</a></li>
+							<li><a href="javascript:;">故事</a></li>
+							<li><a href="javascript:;">注册</a></li>
+							<li><a href="javascript:;">登录</a></li>
+							<li class="cur"><a href="javascript:;">加入我们</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src='js/jquery-1.12.0.min.js'></script>
+<script type="text/javascript">
+	$(function() {
+		$('.nav-list li').on('click',function(){
+			$(this).addClass('cur').siblings().removeClass('cur');
+		});
+	});
+</script>
+</html>

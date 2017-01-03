@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*重置默认设置 B*/
+html {
+    /*移动端rem布局设置默认字体大小*/
+  /*  font-size: 625%;*/
+    /*让非ie浏览器默认就显示垂直滚动条，防止因滚动条引起的闪烁 */
+    overflow-y: scroll;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p,  /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset,legend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    /* 清除内外边距 */
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, legend, textarea {
+    color: #000;
+    /*设置默认字体*/
+    font-family: 'Microsoft Yahei', '微软雅黑', \5FAE\8F6F\96C5\9ED1, '宋体', \5b8b\4f53, arial, 'Hiragino Sans GB', Tahoma, Arial, Helvetica;
+}
+
+fieldset, img, input, button,textarea,select, option {
+    /*去掉边框*/
+    border: none;
+    /*去除选中高亮*/
+    outline: none;
+}
+
+ul, ol, li, dl, dd, dt {
+    /*清除列表风格*/
+    list-style: none;
+}
+
+select, input {
+    /*位置居中*/
+    vertical-align: middle;
+}
+
+input,textarea {
+    /*防止多行文本框拖动*/
+    resize: none;
+    /*清除移动端输入框的默认的样式*/
+    appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /*可读可写，但是复制过来的文字的格式会被去除，如大小，加粗等*/
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+a,img,div,ul,ol,li,p,h1, h2, h3, h4, h5, h6,input,textarea,select, option {
+    /*去除点击产生的小块块*/
+    tap-highlight-color: rgba(0,0,0,0);
+    -o-tap-highlight-color: rgba(0,0,0,0);
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img {
+    /*去掉图片低测默认的3像素空白缝隙*/
+    vertical-align: middle;
+    /*解决IE图片缩放失真*/
+    -ms-interpolation-mode: bicubic;
+}
+
+table {
+    /*重置表格元素*/
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a,a:hover, a:active, a:visited, a:link, a:focus {
+    color: #000;
+    /*去除a链接的下划线*/
+    text-decoration: none;
+}
+
+label, button {
+    /*按钮变成小手点击*/
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /*去除h类的标签的默认样式*/
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    /*去除这几个标签的默认样式*/
+    font-style: normal;
+    text-decoration: none;
+}
+/*重置默认设置 E*/
+
+
+
+/*公共类 B*/
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*连续英文数字换行*/
+.wordwrap {
+    word-break: break-all;      /*这个属性不支持Opera*/
+    word-wrap: break-word;
+}
+
+/*单行文字超出显示省略号*/
+.omg {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.db {
+    display: block;
+}
+.dn {
+    display: none;
+}
+
+/*左右浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/*公共类 E*/
